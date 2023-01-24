@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include "menu.h"
 
-int getMenuOption() {
+int GetMenuOption() {
 	int opt;
 	printf("*** WORD STATS MENU ***\n");
 	printf("Enter %d to print vowel and consonant frequency.\n", MENU_STATS);
