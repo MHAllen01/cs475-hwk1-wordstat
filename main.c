@@ -19,11 +19,19 @@
  */
 int main(int argc, char *argv[]) {
 	// declare and initialize the histogram
-	int histogram[ALPHABET_SIZE];
+	//int histogram[ALPHABET_SIZE];
 
 	// TODO: start by getting strings from users until # is input
+	char inputStrings[MAX_INPUT_LEN];
+
+	printf("Enter strings (# to stop):\n");
+	while(strcmp(inputStrings, "#") != 0) {
+		fgets(strtok(inputStrings, "\n"), MAX_INPUT_LEN, stdin);
+	}
 	// TODO: after # is input, print menu options
-	
+	if (strcmp(inputStrings, "#") == 0) {
+		getMenuOption();
+	}
 	printf("Exiting...\n");
 	return 0;
 }
